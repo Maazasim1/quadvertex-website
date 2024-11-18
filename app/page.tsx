@@ -1,9 +1,10 @@
 import Image from "next/image";
 import xera from "../public/xera.svg"
 import shapes from "../public/shapes.svg"
+import logo from "../public/final.svg"
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Image
         src={xera}
         alt="Themeptation "
@@ -16,16 +17,24 @@ export default function Home() {
       />
       <div className="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
         <div className="text-center space-y-10">
-          <h3 className="font-light text-xl uppercase tracking-wider">
-            QUAD VERTEX Coming soon
-          </h3>
-          <h1 className="text-7xl lg:text-9xl font-extrabold">We’re blowing up</h1>
+          <div className="flex sm:flex-row flex-col items-center justify-center">
+            <Image
+              src={logo}
+              alt="hero"
+              className="w-24"
+            />
+            <h3 className="font-light text-xl uppercase tracking-wider">
+              QUADVERTEX
+            </h3>
+          </div>
+
+          <h1 className="text-5xl lg:text-7xl font-extrabold">Our website is getting a makeover. Launching soon!</h1>
           <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
-            We`re under construction. Check back for an update soon. Stay in
-            touch! 
+            We're under construction. Check back for an update soon. Stay in
+            touch!
           </p>
         </div>
-        <form className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
+        {/* <form className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
           <input
             type="text"
             placeholder="hi@quadvertex.com"
@@ -34,10 +43,10 @@ export default function Home() {
           <button className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
             Notify me
           </button>
-        </form>
+        </form> */}
       </div>
-      <div className="absolute bottom-5">
-        {/* <ul className="flex space-x-3">
+      {/* <div className="absolute bottom-5">
+        <ul className="flex space-x-3">
       <li>
       <Link href="https://themeptation.net">
       <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
@@ -106,8 +115,8 @@ export default function Home() {
       </a>
       </Link>
       </li>
-      </ul> */}
-      </div>
+      </ul>
+      </div> */}
 
     </div>
   );
