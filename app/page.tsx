@@ -1,7 +1,7 @@
 import Image from "next/image";
 import xera from "../public/xera.svg"
 import shapes from "../public/shapes.svg"
-import logo from "../public/final.svg"
+import logo from "../public/final-cropped.svg"
 export default function Home() {
   return (
     <div className="">
@@ -21,7 +21,7 @@ export default function Home() {
             <Image
               src={logo}
               alt="hero"
-              className="w-24"
+              className="w-16 sm:mr-3"
             />
             <h3 className="font-light text-xl uppercase tracking-wider">
               QUADVERTEX
