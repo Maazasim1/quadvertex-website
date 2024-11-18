@@ -1,14 +1,16 @@
 import Image from "next/image";
+import xera from "../public/xera.svg"
+import shapes from "../public/shapes.svg"
 export default function Home() {
   return (
     <div>
-      <img
-        src="/xera.svg"
+      <Image
+        src={xera}
         alt="Themeptation "
         className="absolute h-96 -top-20 -right-16 lg:right-5 lg:top-10 animate-blob"
       />
-      <img
-        src="/shapes.svg"
+      <Image
+        src={shapes}
         alt="hero"
         className="absolute w-full left-24 bottom-24 animate-blob2"
       />
