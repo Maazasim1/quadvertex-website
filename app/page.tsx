@@ -30,7 +30,7 @@ export default function Home() {
 
           <h1 className="text-5xl lg:text-7xl font-extrabold">Our website is getting a makeover. Launching soon!</h1>
           <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
-            We're under construction. Check back for an update soon. Stay in
+            We&apos;re under construction. Check back for an update soon. Stay in
             touch!
           </p>
         </div>
