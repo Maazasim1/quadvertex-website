@@ -19,7 +19,7 @@ export default function Home() {
           <h3 className="font-light text-xl uppercase tracking-wider">
             QUAD VERTEX Coming soon
           </h3>
-          <h1 className="text-7xl lg:text-9xl font-extrabold">We’r blowing up</h1>
+          <h1 className="text-7xl lg:text-9xl font-extrabold">We’re blowing up</h1>
           <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
             We`re under construction. Check back for an update soon. Stay in
             touch!
