@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import '../styles/globals.css';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,7 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <head>
+        <link rel="preconnect" href="https://stijndv.com" />
+        <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
