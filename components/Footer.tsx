@@ -20,12 +20,16 @@ const Footer = () => (
           Contact Quadvertex
         </h4>
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-         
-          <span className="font-normal text-[16px] text-white">
-            Contact Quadvertex
-          </span>
+          <a href='tel:+923322724281'>
+            <span className="font-normal text-[16px] text-white">
+              Contact Quadvertex
+            </span>
+          </a>
         </button>
       </div>
+        <span className="font-normal text-[16px] text-white">
+          Phone: +923322724281
+        </span>
 
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
@@ -39,7 +43,7 @@ const Footer = () => (
           </p> */}
 
           <div className="flex gap-4">
-            {socials.map(({url,name,link}:{url:string,name:string,link:string}) => (
+            {socials.map(({ url, name, link }: { url: string, name: string, link: string }) => (
               <a key={name} href={link}>
                 <img
                   src={url}
